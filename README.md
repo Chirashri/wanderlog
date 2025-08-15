@@ -50,9 +50,9 @@ Before running the app, create **free API keys** for the following services:
 
 ```bash
 # clone the repository
-git clone (https://github.com/Chirashri/wanderlog.git)
+git clone https://github.com/<your-username>/<your-repo>.git
 
-cd <chirashri/wanderlog>
+cd <your-repo>
 
 # install dependencies
 npm install
