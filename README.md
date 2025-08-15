@@ -43,7 +43,15 @@ Before running the app, create **free API keys** for the following services:
 | TimeZoneDB         | https://timezonedb.com/                                 |
 
 > Add these keys in the place of `YOUR_API_KEY` within the code.
-![WanderLog Screenshot1](./screenshots/homepage.png)
+
+
+![WanderLog Screenshot1](https://github.com/Chirashri/wanderlog/blob/main/W1.png)
+
+![WanderLog Screenshot2](https://github.com/Chirashri/wanderlog/blob/main/W2.png)
+
+![WanderLog Screenshot3](https://github.com/Chirashri/wanderlog/blob/main/W3.png)
+
+![WanderLog Screenshot4](https://github.com/Chirashri/wanderlog/blob/main/W4.png)
 
 ---
 
