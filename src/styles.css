@@ -1,0 +1,61 @@
+.city-night-wrapper {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.city-sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #0d1b2a, #1b263b, #415a77);
+}
+
+.city-sky::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: transparent url("https://transparenttextures.com/patterns/stardust.png") repeat;
+  animation: starsMove 100s linear infinite;
+  opacity: 0.6;
+}
+
+.city-buildings {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/City_skyline_silhouette.svg/1920px-City_skyline_silhouette.svg.png") repeat-x;
+  background-size: contain;
+  animation: cityMove 20s linear infinite;
+}
+
+
+.city-buildings::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#ffcc00 2%, transparent 3%) repeat;
+  background-size: 4px 4px;
+  opacity: 0.2;
+  animation: flicker 2s infinite;
+}
+
+@keyframes starsMove {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-50%, -50%); }
+}
+
+@keyframes cityMove {
+  from { background-position: 0 bottom; }
+  to { background-position: -1000px bottom; }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.4; }
+}
