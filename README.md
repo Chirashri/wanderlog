@@ -1,12 +1,63 @@
-# React + Vite
+# 🌏 WanderLog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**WanderLog** is a smart travel application that lets users explore **any place in the world** — including remote towns and districts.  
+It shows 📍 **exact location on a live map**, 🌤 **weather**, 🕒 **local time**, 💱 **currency information**, 📷 **high-resolution images** (Wikipedia), and 🏛 **famous landmarks**, all in one place.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔎 Search by **country / state / city / district / remote place**
+- 🗺 Interactive map (OpenStreetMap + Leaflet)
+- 🌤 Real-time **weather information** using OpenWeatherMap API
+- 🕒 Local **time** using TimezoneDB
+- 💱 **Exchange rate** (base currency → INR) using ExchangeRate API
+- 📷 **High-resolution image** of the place (Wikipedia media)
+- 🏛 Shows **well-known landmarks** from Wikipedia
+- Supports 🔤 **multi-language** via language selector
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Tech Stack
+
+| Stack / Tool       | Uses                                               |
+|--------------------|----------------------------------------------------|
+| **React**          | Front-end UI                                       |
+| **Leaflet**        | Interactive OpenStreetMap                          |
+| **TailwindCSS**    | Styling                                            |
+| **OpenCage API**   | Geocoding (lat/lng of any location)                |
+| **OpenWeatherMap** | Weather data                                       |
+| **TimeZoneDB**     | Get time zone + local time                         |
+| **Wikipedia REST** | HD image & landmark content                        |
+
+---
+
+## ✅ Prerequisites
+
+Before running the app, create **free API keys** for the following services:
+
+| Service            | URL |
+|--------------------|--------------------------------------------------------|
+| OpenCage Geocoder  | https://opencagedata.com/                               |
+| OpenWeatherMap     | https://openweathermap.org/                             |
+| TimeZoneDB         | https://timezonedb.com/                                 |
+
+> Add these keys in the place of `YOUR_API_KEY` within the code.
+
+---
+
+## 💻 Local Setup
+
+```bash
+# clone the repository
+git clone (https://github.com/Chirashri/wanderlog.git)
+
+cd <chirashri/wanderlog>
+
+# install dependencies
+npm install
+
+# run the app
+npm run dev
+# or
+npm start
